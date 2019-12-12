@@ -1,1 +1,313 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bebas Neue Regular'), local('BebasNeue-Regular'), url(https://fonts.gstatic.com/s/bebasneue/v1/JTUSjIg69CK48gW7PXoo9Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3aZQNVED7rKGKxtqIqX5EUDXx9.ttf) format('truetype');
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  width: 90%;
+  margin: 0 5%;
+  height: 100%;
+  background-color: #A7FFF6;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+}
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.4;
+  font-size: 3rem;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+nav a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  padding: 0 1%;
+  font-family: 'Bebas Neue', cursive;
+  color: #001f3f;
+}
+@media (max-width: 500px) {
+  nav a {
+    border: 2px solid #5C6F68;
+    text-align: center;
+    font-size: 4rem;
+  }
+}
+.top-content {
+  background-color: #8AA39B;
+  margin: 0 auto;
+}
+.top-content img {
+  margin: 1% 1% 0 1%;
+}
+.top-content p {
+  font-size: 3rem;
+}
+.top-content .top-content-name {
+  margin: 1% 1%;
+}
+.top-content .top-content-info {
+  margin: 1% 1%;
+  padding-bottom: 1%;
+}
+.top-content .top-content-info p {
+  font-size: 2.5rem;
+}
+.top-content h1 {
+  font-size: 5rem;
+}
+.top-content button {
+  padding: 0.5% 2%;
+  font-size: 2.5rem;
+}
+.middle-content {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .middle-content {
+    text-align: center;
+  }
+}
+.middle-content .left-middle {
+  width: 45%;
+  margin-right: 5%;
+}
+.middle-content .left-middle h2 {
+  font-size: 3.5rem;
+}
+.middle-content .left-middle p {
+  font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  .middle-content .left-middle {
+    width: 100%;
+  }
+}
+.middle-content .right-middle {
+  width: 50%;
+}
+.middle-content .right-middle h3 {
+  font-size: 3.5rem;
+}
+@media (max-width: 500px) {
+  .middle-content .right-middle {
+    width: 100%;
+  }
+}
+.middle-content .right-middle .right-middle-list h4 {
+  font-size: 2.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 0.5% 0.3%;
+  background-color: #95D9C3;
+  border: 1px solid grey;
+}
+@media (max-width: 500px) {
+  .middle-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.bottom-content {
+  margin-bottom: 2%;
+}
+.bottom-content h3 {
+  margin-bottom: 1%;
+  text-align: center;
+  font-size: 4rem;
+}
+.bottom-content .bottom-content-table {
+  display: flex;
+  justify-content: space-around;
+  padding: 1% 0;
+  border: 5px dashed #5C6F68;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-content-table {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.bottom-content .section1,
+.bottom-content .section2,
+.bottom-content .section3,
+.bottom-content .section4 {
+  border: 3px solid #95D9C3;
+  padding: 1% 2%;
+  background-color: #8AA39B;
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    text-align: center;
+  }
+}
+footer p {
+  text-align: center;
+}
