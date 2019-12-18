@@ -57,3 +57,176 @@ html, body {
     height: 100%;
 }
 
+// Start of my code
+@import
+url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import 
+url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+@header-font: 'Bebas Neue', cursive;
+@main-font: 'Josefin Sans', sans-serif;
+@main-color-dark:#5C6F68;
+@main-color-less-dark:#8AA39B;
+@main-color-middle:#95D9C3;
+@main-color-less-light:#A4F9C8;
+@main-color-light:#A7FFF6;
+@main-color: #001f3f;
+
+.space-around(){
+	display:flex;
+	justify-content:space-around;
+}
+
+.bordered(){
+	border:5px dashed @main-color-dark;
+}
+
+html {
+	box-sizing: border-box;
+	font-size:62.5%;
+}
+body{
+	width:90%;
+	margin:0 5%;
+	height:100%;
+	background-color:@main-color-light;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family:@header-font;
+	font-size:3rem;
+}
+p {
+	font-family:@main-font;
+	line-height: 1.4;
+	font-size:3rem;
+}
+
+nav {
+	display:flex;
+	justify-content:flex-end;
+	margin-top:0.5%;
+	margin-bottom:0.5%;
+	@media(max-width:500px){
+		display:flex;
+		flex-direction:column;
+		justify-content:space-evenly;
+	}
+	a{
+		text-decoration:none;
+		font-size:2.5rem;
+		padding:0 1%;
+		font-family:@header-font;
+		color:@main-color;
+		@media(max-width:500px){
+			border:2px solid @main-color-dark;
+			text-align:center;
+			font-size:4rem;
+		}
+
+	}
+}
+.top-content{
+	background-color:@main-color-less-dark;
+	margin:0 auto;
+	img{
+		margin:1% 1% 0 1%;
+	}
+	p {
+		font-size:3rem;
+	}
+	.top-content-name{
+		margin:1% 1%;
+	}
+	.top-content-info{
+		margin:1% 1%;
+		padding-bottom:1%;
+		
+		p {
+			font-size:2.5rem;
+	}
+		
+	}
+	h1 {
+		font-size:5rem;
+	}
+	
+	button{
+		padding:0.5% 2%;
+		font-size:2.5rem;
+		
+	}
+}
+.middle-content{
+	display:flex;
+	flex-direction:row;
+	margin-bottom:1%;
+	@media(max-width: 500px){
+		text-align:center;
+	}
+	.left-middle{
+		width:45%;
+		margin-right:5%;
+		h2 {
+			font-size:3.5rem;
+		}
+		p {
+			font-size:2.5rem;
+		}
+		@media(max-width: 500px){
+		width:100%;
+		}
+	}
+	.right-middle{
+		width:50%;
+		h3 {
+			font-size:3.5rem;
+		}
+		@media(max-width: 500px){
+			width:100%;
+			}
+		.right-middle-list {
+			h4{
+			font-size:2.5rem;
+			font-family:@main-font;
+			padding:0.5% 0.3%;
+			background-color:@main-color-middle;
+			border:1px solid grey;
+		} 
+		
+		}	
+	}
+	@media(max-width: 500px){
+			display:flex;
+			flex-direction:column;
+			
+		}
+}
+.bottom-content{
+	margin-bottom:2%;
+	h3{
+		margin-bottom:1%;
+		text-align:center;
+		font-size:4rem;
+	}
+	.bottom-content-table{
+		.space-around();
+		padding:1% 0;
+		.bordered();
+		@media(max-width: 500px){
+		display:flex;
+		flex-direction:column;
+	}	
+	}
+	.section1, .section2, .section3, .section4{
+	border:3px solid @main-color-middle;
+	padding:1% 2%;
+	background-color:@main-color-less-dark;
+	
+	}
+	@media(max-width: 500px){
+		text-align:center;
+	}
+}
+footer p{
+	text-align:center;
+}
